@@ -1,0 +1,55 @@
+ 
+Pyenv: 
+
+
+Python has multiple versions 3.6 3.7, 3.8
+Pytho libraries does not work well with all versions like BERT, PyText 
+So from the betginning of python it has a concept call "PyEnv"
+
+Which means whenever you are working  on a new project  you always create a dedicated Python evnrionment and install all the dependencies specific  for that project 
+
+
+example:
+
+RiskDataMLProject -> c:\RiskDataMlProjGitRepo\<pyenv>
+source activate c:\RiskDataMlProjGitRepo\<pyenv> in the command line... then ehatever Python cod you execute will depend on this folder installed libraries 
+For example you nee  BERT here
+pip install bert -> this will install BERT inside  c:\RiskDataMlProjGitRepo\<pyenv>
+
+FraudDataMLProject -> c:\FraudDataMlProjGitRepo\<pyenv>
+You dont need BERT here but you Pytext 
+pip install pytext -> this will install pytext inside c:\FraudDataMlProjGitRepo\<pyenv>
+
+
+========================
+
+requirements.txt 
+
+Just like Java has pom.xml for every Java project, every Python project needs requirements.tt file (this is otpitonal)  in this you wil lmention all library names 
+
+pip install -r requirements.txt 
+
+above is the commad
+
+
+
+=======================
+
+Java has following web frameworks like Struts, Spring Web, JSP
+similar to that
+
+Python has following we bframeworks like Django, Flask
+
+Flask is very light webight bmeaning it does not come with all web related capabilities -> mini-web-framework -< best used to make Ptyhon code acessinble via HTTP
+it is not meant for returning HTML as response, it meanst of rreturing JSON as response -> best suited for making ML code available via HTTP 
+
+Django has full fledge web capabilities like Database transactions, HTML response, this is best usited if you need any HTML + JSON based api 
+
+In the industry generally people use Flask as backend ML API and Angular as the front end not Python based Web UI
+Angular is different technology -> using Angular they make a call Falsk API which return sthe JSOn and show that json in HTML format
+
+Above is for Machine learning => Flask is Rest API
+
+=======================
+
+
